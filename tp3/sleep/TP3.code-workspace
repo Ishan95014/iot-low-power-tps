@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "name": "TP3 - ESP32 sleep lab",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "platformio-ide.defaultEnv": "deep"
+  }
+}

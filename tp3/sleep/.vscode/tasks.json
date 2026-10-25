@@ -1,0 +1,109 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "TP3: Build selected experiment",
+      "type": "process",
+      "command": "pio",
+      "args": [
+        "run",
+        "-e",
+        "${input:experiment}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "TP3: Upload selected experiment",
+      "type": "process",
+      "command": "pio",
+      "args": [
+        "run",
+        "-e",
+        "${input:experiment}",
+        "-t",
+        "upload"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    },
+    {
+      "label": "TP3: Serial monitor (115200)",
+      "type": "process",
+      "command": "pio",
+      "args": [
+        "device",
+        "monitor",
+        "-b",
+        "115200"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "TP3: Build ALL experiments",
+      "type": "process",
+      "command": "pio",
+      "args": [
+        "run",
+        "-e",
+        "deep",
+        "-e",
+        "deep_rtc",
+        "-e",
+        "normal",
+        "-e",
+        "light",
+        "-e",
+        "button",
+        "-e",
+        "button_light",
+        "-e",
+        "ldr",
+        "-e",
+        "ldr_deep",
+        "-e",
+        "ldr_deep_slow"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "experiment",
+      "type": "pickString",
+      "description": "Choose the TP3 experiment (start with deep)",
+      "options": [
+        "deep",
+        "deep_rtc",
+        "normal",
+        "light",
+        "button",
+        "button_light",
+        "ldr",
+        "ldr_deep",
+        "ldr_deep_slow"
+      ],
+      "default": "deep"
+    }
+  ]
+}

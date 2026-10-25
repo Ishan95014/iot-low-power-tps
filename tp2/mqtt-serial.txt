@@ -1,0 +1,21 @@
+===== Groupe 4 - Lison-Ishan | TP2 MQTT =====
+BME680 -> ESP32 -> Mosquitto VPS + Adafruit IO
+I2C device: 0x27
+I2C device: 0x77
+Wi-Fi connecting; MQTT uses TLS on port 8883.
+E (10546) wifi:Set status to INIT
+===== Groupe 4 - Lison-Ishan | TP2 MQTT | uptime 10s =====
+Temperature: 26.56 C | 79.80 F | Humidity: 61.74 %
+Mosquitto VPS | iot/tp2/readings | WAITING / retry next sample
+Adafruit IO | temperature: WAITING | humidity: WAITING
+Waiting for network time
+[Groupe 4 - Lison-Ishan] VPS MQTT: CONNECTED (state 0)
+[Groupe 4 - Lison-Ishan] Adafruit MQTT: CONNECTED (state 0)
+===== Groupe 4 - Lison-Ishan | TP2 MQTT | uptime 22s =====
+Temperature: 26.08 C | 78.94 F | Humidity: 61.75 %
+Mosquitto VPS | iot/tp2/readings | PUBLISHED
+Adafruit IO | temperature: PUBLISHED | humidity: PUBLISHED
+===== Groupe 4 - Lison-Ishan | TP2 MQTT | uptime 32s =====
+Temperature: 25.90 C | 78.62 F | Humidity: 61.95 %
+Mosquitto VPS | iot/tp2/readings | PUBLISHED
+Adafruit IO | temperature: PUBLISHED | humidity: PUBLISHED

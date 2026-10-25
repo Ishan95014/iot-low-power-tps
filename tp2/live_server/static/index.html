@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ESP32 · Live environment</title><link rel="stylesheet" href="style.css">
+<main>
+<header><span class="board">ESP32 / BME680</span><span id="status" role="status">Waiting for sensor</span></header>
+<h1>A little window<br>into the room.</h1>
+<p class="intro">Groupe 4 · Lison-Ishan. Readings sent by the ESP32 through Mosquitto MQTT.</p>
+<section class="instruments" aria-label="Latest sensor readings">
+<div><h2>Temperature</h2><p class="reading"><span id="temperature">—</span><small>°C</small></p><p id="fahrenheit">No readings yet</p></div>
+<div><h2>Humidity</h2><p class="reading"><span id="humidity">—</span><small>%</small></p><p>Relative humidity</p></div>
+</section>
+<div class="meta"><span id="updated">Connect the ESP32 to Wi-Fi to start.</span><span id="uptime">Board uptime: —</span></div>
+<section class="history"><h2>Recent readings</h2><p id="notice">New samples arrive automatically. Upload timing depends on the hotspot connection.</p>
+<table><thead><tr><th>Received</th><th>Temperature</th><th>Humidity</th></tr></thead><tbody id="samples"><tr><td colspan="3">Waiting for the first real sample.</td></tr></tbody></table></section>
+<footer><span>TP 2 · IoT &amp; Consumption</span><a href="api/readings">Read the JSON API</a></footer>
+</main><script src="app.js"></script>
+</html>

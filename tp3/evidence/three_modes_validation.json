@@ -1,0 +1,31 @@
+{
+  "source": "Local CSV exports; private source spreadsheet URL omitted",
+  "resistance_ohm": 1.3,
+  "normal": {
+    "mean_mA": 34.0714485125,
+    "window_s": 10,
+    "samples": 8000,
+    "cells": "A1:B8000"
+  },
+  "light": {
+    "mean_mA": 7.4048067333,
+    "window_s": 10,
+    "samples": 8000,
+    "cells": "E17:F8016"
+  },
+  "deep": {
+    "full_capture_mean_mA": 7.8112277146,
+    "full_capture_window_s": 20,
+    "samples": 8000,
+    "whole_cycle_mean_mA": 7.6396735776,
+    "whole_cycle_window_s": 12.4725,
+    "whole_cycle_count": 6,
+    "time_start_s": -3.05,
+    "time_end_s": 9.4225,
+    "mean_cells": "L2797:L7785",
+    "sleep_median_mA": 3.2600894083,
+    "sampled_max_mA": 59.6512453106,
+    "sampling_hz": 400,
+    "issue": "One wake-to-wake interval is 1.2925 s instead of approximately 2.08 s. The selected six-cycle average excludes this irregular interval. A faster wake-up capture is still required for peak measurement."
+  }
+}
